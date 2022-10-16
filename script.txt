@@ -1,0 +1,113 @@
+quit()
+exit()
+import threading
+import _thread
+import requests
+clear
+exit(0)
+exit
+exit(0)
+exit
+exit()
+exit(0)
+exit()
+exit(0)
+exit()
+import pandas
+df=pandas.read_csv('./detection.log2')
+df
+df.apply(lambda x: x.split(": "))
+df.apply(lambda x: x[0].split(": "))
+df.apply(lambda x: x.split(": "), axis=1)
+df.apply(lambda x: x.split(": "), axis=0)
+df.apply(lambda x: x.split(": "))
+help(df.apply)
+df.apply(lambda x: x.split(": "), axis=1, raw=True)
+df.apply(lambda x: x[0].split(": "), axis=1, raw=True)
+df.apply(lambda x: x[0], axis=1, raw=True)
+df.apply(lambda x: x[0].split(": ")[1], axis=1, raw=True)
+import datetime
+df.apply(lambda x: x[0].split(": ")[1], axis=1, raw=True)
+df.apply(lambda x: x[0].split(": ")[1], axis=1, raw=True).apply(lambda x: datetime.strptime(x))
+df.apply(lambda x: x[0].split(": ")[1], axis=1, raw=True).apply(lambda x: datetime.datetime.strptime(x))
+df.apply(lambda x: x[0].split(": ")[1], axis=1, raw=True).apply(lambda x: datetime.datetime.strptime(x, '%D %M %d'))
+df.apply(lambda x: x[0].split(": ")[1], axis=1, raw=True).apply(lambda x: datetime.datetime.strptime(x, '%d %M %D'))
+df.apply(lambda x: x[0].split(": ")[1], axis=1, raw=True).apply(lambda x: datetime.datetime.strptime(x, '%a %b %D'))
+df.apply(lambda x: x[0].split(": ")[1], axis=1, raw=True).apply(lambda x: datetime.datetime.strptime(x, '%a %b %d'))
+df.apply(lambda x: x[0].split(": ")[1], axis=1, raw=True).apply(lambda x: datetime.datetime.strptime(x, '%a %b %d %H:%M:%S %Y'))
+res=df.apply(lambda x: x[0].split(": ")[1], axis=1, raw=True).apply(lambda x: datetime.datetime.strptime(x, '%a %b %d %H:%M:%S %Y'))
+res
+type(res)
+res.groupby
+res.groupby()
+help(res.groupby)
+res.groupby(lambda x: x.hour)
+res[0]
+res[0].
+res[0].hour
+res[0].day
+res[0].minute
+res.groupby(lambda x: x[0].hour)
+res.groupby(lambda x: x)
+res.groupby(lambda x: type(x))
+help(res.groupby(lambda x: type(x)))
+res.groupby(lambda x: type(x)).count
+res.groupby(lambda x: type(x)).count()
+help(res.groupby)
+res.groupby(lambda x: type(x), axis=1)
+res.groupby(lambda x: type(x))
+res.groupby(lambda x: type(x)).count()
+res.groupby(lambda x: x).count()
+res.groupby(lambda x,y : x).count()
+res.groupby(lambda x: x.value).count()
+res
+res.values
+res.groupby(lambda x: res[x].hour)
+res.groupby(lambda x: res[x].hour).count()
+res.groupby(lambda x: (res[x].day, res[x].hour)).count()
+res.groupby(lambda x: res[x]).count()
+res.groupby(lambda x: res[x]).count().plot()
+import matplotlib.pyplot as plt 
+res.groupby(lambda x: res[x]).count().plot()
+pandas.options.plotting.backend = "plotly"
+res.groupby(lambda x: res[x]).count().plot()
+fig=res.groupby(lambda x: res[x]).count().plot()
+fig.show()
+fig=res.groupby(lambda x: res[x]).count().plot(auto_open=False, filename="res.html")
+fig=res.groupby(lambda x: res[x]).count().plot(kwargs={auto_open=False, filename="res.html"})
+fig=res.groupby(lambda x: res[x]).count().plot(kwargs={auto_open:False, filename:"res.html"})
+fig=res.groupby(lambda x: res[x]).count().plot(kwargs={'auto_open':False, 'filename':"res.html"})
+fig=res.groupby(lambda x: res[x]).count().plot()
+fig
+dir(fig)
+fig.write_image("output.plot")
+fig.write_html("output.plot")
+fig=res.groupby(lambda x: res[x]).count().plot(kind="bar")
+fig.write_html("output.html")
+fig=res.groupby(lambda x: res[x]).count().plot(kind="scatter")
+res.groupby(lambda x: res[x]).count().plot(kind="scatter").write_html("output.html")
+res
+df
+res
+res[0]
+res[0] + datetime.datetime.timedelta(2)
+datetime.datetime.time_delta
+datetime.time_detla
+datetime.datetime
+datetime.datetime.timetz
+datetime.datetime.timetz()
+datetime.timedelta(hours=2)
+res[0] + datetime.timedelta(hours=2)
+res.apply(lambda x: res[x] + datetime.timedelta(hours=2)).groupby(lambda x: res[x]).count().plot(kind="scatter").write_html("output.html")
+res.apply(lambda x: x + datetime.timedelta(hours=2)).groupby(lambda x: res[x]).count().plot(kind="scatter").write_html("output.html")
+res
+res.apply(lambda x: x + datetime.timedelta(hours=2))
+res=res.apply(lambda x: x + datetime.timedelta(hours=2))
+res
+res2.groupby(lambda x: res[x]).count().plot(kind="scatter").write_html("output.html")
+res.groupby(lambda x: res[x]).count().plot(kind="scatter").write_html("output.html")
+history
+history()
+import readline; print('\n'.join([str(readline.get_history_item(i + 1)) for i in range(readline.get_current_history_length())]))
+script=list()
+import readline; script.append('\n'.join([str(readline.get_history_item(i + 1)) for i in range(readline.get_current_history_length())]))
